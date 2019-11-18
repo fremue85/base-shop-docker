@@ -17,16 +17,14 @@ RUN apt-get update && \
     curl \
     unzip \
     zip \
+    wget \
     && mkdir /var/www/log \
     && a2enmod rewrite \
     && php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
     && php composer-setup.php \
     && php -r "unlink('composer-setup.php');" \
-    && curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash \
-    && export NVM_DIR="$HOME/.nvm" \
-    && [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" \
-    && [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" \
-    && nvm install v11.15.0 \
-    && nvm use v11.15.0 \
-    && npm i -g gulp-cli \
-    && node -v
+    && wget https://nodejs.org/download/release/v11.15.0/node-v11.15.0-linux-x64.tar.gz \
+    && tar -C /usr/local --strip-components 1 -xzf node-v11.15.0-linux-x64.tar.gz \
+    && node -v \
+    && npm -v \
+    && npm i -g gulp-cli

@@ -28,4 +28,5 @@ RUN apt-get update && \
     && [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" \
     && [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" \
     && nvm install v11.15.0 \
-    && npm i -g gulp-cli
+    && npm i -g gulp-cli \
+    && echo node -v

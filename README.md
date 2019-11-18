@@ -1,1 +1,3 @@
-# base-shop-docker
+# Base-Shop Dockerfile
+
+> Foundation of Engravo's Webshop

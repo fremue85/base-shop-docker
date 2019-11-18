@@ -17,7 +17,6 @@ RUN apt-get update && \
     curl \
     unzip \
     zip \
-    bash \
     && mkdir /var/www/log \
     && a2enmod rewrite \
     && php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \

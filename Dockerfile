@@ -3,6 +3,8 @@ FROM ubuntu:latest
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y \
     php \
+    php-mbstring \
+    php-xml \
     jq \
     curl \
     unzip \

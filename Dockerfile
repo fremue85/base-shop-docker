@@ -19,4 +19,5 @@ RUN apt-get update && \
     && node -v \
     && npm -v \
     && composer --version \
-    && npm i -g gulp-cli
+    && npm i -g gulp-cli \
+    && npm i

@@ -1,11 +1,11 @@
-FROM ubuntu:latest
+FROM ubuntu:20.04
 
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y \
     openssh-client \
-    php \
-    php-mbstring \
-    php-xml \
+    php7.4 \
+    php7.4-mbstring \
+    php7.4-xml \
     jq \
     curl \
     unzip \

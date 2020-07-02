@@ -12,4 +12,4 @@ docker build -t base-shop-docker .
 docker run -it --name base-shop-docker base-shop-docker bash
 ```
 
-The source code is hosted at GitHub, automated build are already being triggered when pushing to GitHub. See <https://docs.docker.com/docker-hub/builds/> for further information.
+The source code is hosted at GitHub, automated builds are already being triggered when pushing to GitHub. See <https://docs.docker.com/docker-hub/builds/> for further information.

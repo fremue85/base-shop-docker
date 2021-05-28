@@ -6,7 +6,10 @@
 
 ```bash
 # Build docker image
-docker build -t base-shop-docker .
+docker build - < Dockerfile
+
+# Rename docker image
+docker image tag <cf806a412b3b> base-shop-docker
 
 # Run docker
 docker run -it --name base-shop-docker base-shop-docker bash

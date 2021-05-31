@@ -14,8 +14,8 @@ RUN apt-get update && \
     && curl -sS http://getcomposer.org/installer | php -- --filename=composer \
     && chmod a+x composer \
     && mv composer /usr/local/bin/composer \
-    && wget https://nodejs.org/download/release/v12.14.1/node-v12.14.1-linux-x64.tar.gz \
-    && tar -C /usr/local --strip-components 1 -xzf node-v12.14.1-linux-x64.tar.gz \
+    && wget https://nodejs.org/download/release/v12.22.1/node-v12.22.1-linux-x64.tar.gz \
+    && tar -C /usr/local --strip-components 1 -xzf node-v12.22.1-linux-x64.tar.gz \
     && node -v \
     && npm -v \
     && composer --version \

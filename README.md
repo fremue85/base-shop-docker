@@ -5,11 +5,16 @@
 ## Usage
 
 ```bash
+# Remove all existing base-shop-docker container and images
+
 # Build docker image
 docker build - < Dockerfile
 
+# Get newly build image ID as <dockerImgId>
+docker images
+
 # Rename docker image
-docker image tag <cf806a412b3b> base-shop-docker
+docker image tag <dockerImgId> base-shop-docker
 
 # Run docker
 docker run -it --name base-shop-docker base-shop-docker bash
